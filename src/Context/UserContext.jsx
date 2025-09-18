@@ -7,14 +7,16 @@ export const dataContext = createContext()
 
 function UserContext({children}) {
     let [cate,setcate] = useState(food_items)
-
     let [input,setInput] = useState("")
+    let [showCart,setshowCart] = useState(false)
 
     let data = {
         input,
         setInput,
         cate,
-        setcate
+        setcate,
+        showCart,
+        setshowCart
 
     }
 
